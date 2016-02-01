@@ -1,0 +1,17 @@
+<%= form_for(@pill_taken_event) do |f| %>
+  <% if @pill_taken_event.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pill_taken_event.errors.count, "error") %> prohibited this pill_taken_event from being saved:</h2>
+
+      <ul>
+      <% @pill_taken_event.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit "I just took my pill!" %>
+  </div>
+<% end %>
