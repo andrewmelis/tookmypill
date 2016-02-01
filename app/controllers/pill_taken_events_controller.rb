@@ -6,7 +6,10 @@ class PillTakenEventsController < ApplicationController
   def index
     @pill_taken_events = PillTakenEvent.all
 
-    # being bad -- combining index and new
+    # being bad -- this is really a SPA
+    @latest_pill = @pill_taken_events.order(created_at: :desc).first
+
+    # combining index and new
     @pill_taken_event = PillTakenEvent.new
   end
 

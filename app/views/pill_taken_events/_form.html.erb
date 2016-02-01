@@ -15,12 +15,9 @@
     </div>
   <% end %>
 
-
   <div class="form-group">
-    <div class="col-lg-offset-2 col-lg-10">
-      <%= f.submit nil, :class => 'btn btn-primary' %>
-      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                pill_taken_events_path, :class => 'btn btn-default' %>
+    <div class="col-lg-offset-0 col-lg-10">
+      <%= f.submit t('just_took_my_pill'), :class => 'btn btn-primary' %>
     </div>
   </div>
 

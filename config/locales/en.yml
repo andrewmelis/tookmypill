@@ -20,7 +20,11 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  pill_events_title: 'Did I take my pill?'
+  timestamps: 'Timestamps'
+  just_took_my_pill: 'I just took my pill!'
+  "true": "Yes"
+  "false": "No"
   time:
     formats:
-      default: '%a, %d %b %Y - %I:%M:%S %p'
+      readable: '%a, %d %b %Y - %I:%M:%S %p'
